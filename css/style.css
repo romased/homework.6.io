@@ -7,7 +7,8 @@ body {
     margin: 0 auto;
     height: 100%;
 }
-.top .grad {
+.top .grad,
+.tag a:hover {
     background: rgba(31, 103, 135, 1);
     background: -moz-linear-gradient(top, rgba(31, 103, 135, 1) 0%, rgba(31, 103, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31, 103, 135, 1)), color-stop(0%, rgba(31, 103, 135, 1)), color-stop(100%, rgba(12, 51, 87, 1)));
@@ -23,7 +24,6 @@ body {
 .top {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     height: 54px;
     width: 100%;
 }
@@ -33,36 +33,148 @@ body {
     width: 21px;
     height: 21px;
     border-radius: 100%;
+    margin: 10px 0 0 7px;
 }
-.phone>img {
+.phone img {
     margin-left: 2px;
 }
-
-.number span{
-  font-family: 'Arial', 'Tahoma', sans-serif;
-  font-size: 18px;
-  line-height: 1.415;
-  color: #5e696d;
-  text-align: center;
+.number {
+    margin: 12px 0 0 5px;
 }
-
+.number span {
+    font-family: 'Arial', 'Tahoma', sans-serif;
+    font-size: 18px;
+    line-height: 1.415;
+    color: #5e696d;
+    text-align: center;
+}
 .login {
-  height: 25px;
-  border-radius: 3px;
+    height: 26px;
+    border-radius: 3px;
+    margin: 6px 0 0 28px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
-
 .login input[type=text], input[type=password] {
     border-radius: 2px;
-    padding-left: 5px;
-    width: 110px;
+    margin: 4px -14px 5px 19px;
+    padding: 2px;
+    width: 105px;
 }
-
+.auth {
+    display: block;
+    margin: 6px 0 0 7px;
+    width: 0;
+}
+.reg {
+    margin: 4px 0 0 25px;
+    height: 10px;
+}
+.reg a {
+    text-decoration: none;
+    font: 11px "LucidaSansUnicode", sans-serif;
+    color: #fff;
+}
+.reg img {
+    margin: 0 0 -2px 2px;
+}
+.pass {
+    margin: 4px 13px 0 22px;
+}
+.pass a {
+    font: 12px "Myriad Pro", sans-serif;
+    color: #bfbfbf;
+}
 .nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     width: 75px;
     height: 19px;
-    border: 1px solid grey;
+    margin: 4px 0 0 17px;
+    border: 1px solid #c1c8cb;
     border-radius: 10px;
+}
+.nav a {
+    margin: -2px 2px 0 7px;
+}
+
+.background-1 {
+    height: 235px;
+    background: url('../img/zazor.png');
+}
+/*NAVIGATION*/
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;;
+    align-items: center;
+    height: 32px;
+    border: 1px solid #2c345a;
+    border-radius: 4px;
+    margin-top: 8px;
+    background: rgba(77,86,99,1);
+    background: -moz-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(89,89,89,1) 0%, rgba(44,44,44,1) 0%, rgba(102,102,102,1) 0%, rgba(58,64,70,1) 10%, rgba(1,1,1,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(77,86,99,1)), color-stop(0%, rgba(89,89,89,1)), color-stop(0%, rgba(44,44,44,1)), color-stop(0%, rgba(102,102,102,1)), color-stop(10%, rgba(58,64,70,1)), color-stop(100%, rgba(1,1,1,1)));
+    background: -webkit-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(89,89,89,1) 0%, rgba(44,44,44,1) 0%, rgba(102,102,102,1) 0%, rgba(58,64,70,1) 10%, rgba(1,1,1,1) 100%);
+    background: -o-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(89,89,89,1) 0%, rgba(44,44,44,1) 0%, rgba(102,102,102,1) 0%, rgba(58,64,70,1) 10%, rgba(1,1,1,1) 100%);
+    background: -ms-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(89,89,89,1) 0%, rgba(44,44,44,1) 0%, rgba(102,102,102,1) 0%, rgba(58,64,70,1) 10%, rgba(1,1,1,1) 100%);
+    background: linear-gradient(to bottom, rgba(77,86,99,1) 0%, rgba(89,89,89,1) 0%, rgba(44,44,44,1) 0%, rgba(102,102,102,1) 0%, rgba(58,64,70,1) 10%, rgba(1,1,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5663', endColorstr='#010101', GradientType=0 );
+}
+.route {
+  margin-right: 30px;
+}
+.route .tag {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tag a {
+    display: block;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font: 14px "Myriad Pro", sans-serif;
+    color: #b1bcc0;
+}
+.tag a:hover {
+    display: block;
+    padding: 5px 20px 5px 20px;
+    border-radius: 12px;
+    font: 14px "Myriad Pro", sans-serif;
+    color: #fff;
+}
+
+/*BIN*/
+
+.bin {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 15px;
+}
+.bin img {
+  margin: -1px 9px 0 0;
+}
+.amount-1,
+.amount-2 {
+  font: 12px "Arial", sans-serif;
+  color: #0d5a8f;
+}
+.text-1,
+.text-2 {
+    font: 11px "Arial", sans-serif;
+    color: #929b9f;
+}
+.text-1 {
+    margin: 1px 3px 0 0;
+
+}
+.text-2 {
+    margin: 1px 12px 0 0;
+}
+.amount-1 {
+    margin: 1px 18px 0 0;
+}
+.amount-2 {
+    margin: 0 0 0 0;
 }
